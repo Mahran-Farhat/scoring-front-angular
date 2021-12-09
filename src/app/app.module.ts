@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CreateDoctorComponent } from './doctors/create-doctor/create-doctor.component';
 import { ListDoctorComponent } from './doctors/list-doctor/list-doctor.component';
 import { UpdateDoctorComponent } from './doctors/update-doctor/update-doctor.component';
+import { AdvancedSearchComponent } from './doctors/advanced-search/advanced-search.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UpdateDoctorComponent } from './doctors/update-doctor/update-doctor.com
     FooterComponent,
     CreateDoctorComponent,
     ListDoctorComponent,
-    UpdateDoctorComponent
+    UpdateDoctorComponent,
+    AdvancedSearchComponent
   ],
   imports: [
     BrowserModule,

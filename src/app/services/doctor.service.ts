@@ -27,6 +27,11 @@ export class DoctorService {
     return this.http.get(`${this.url}/${id}`);
   }
 
+  updatedoctor(id:any,value:any):Observable<any>{
+    return this.http.put(`${this.url}/${id}`,value);
+
+  }
+
 
 
 
