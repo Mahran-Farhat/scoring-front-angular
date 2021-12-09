@@ -19,6 +19,14 @@ export class DoctorService {
     return this.http.get(`${this.url}`);
   }
 
+  deletedoctor(id:any):Observable<any>{
+    return this.http.delete(`${this.url}/${id}`);
+  }
+
+  getdoctor(id:any):Observable<any>{
+    return this.http.get(`${this.url}/${id}`);
+  }
+
 
 
 

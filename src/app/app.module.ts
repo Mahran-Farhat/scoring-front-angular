@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CreateDoctorComponent } from './doctors/create-doctor/create-doctor.component';
 import { ListDoctorComponent } from './doctors/list-doctor/list-doctor.component';
+import { UpdateDoctorComponent } from './doctors/update-doctor/update-doctor.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ListDoctorComponent } from './doctors/list-doctor/list-doctor.component
     NavbarComponent,
     FooterComponent,
     CreateDoctorComponent,
-    ListDoctorComponent
+    ListDoctorComponent,
+    UpdateDoctorComponent
   ],
   imports: [
     BrowserModule,

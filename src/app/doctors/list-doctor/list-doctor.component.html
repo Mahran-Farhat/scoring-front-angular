@@ -11,6 +11,8 @@
         <th scope="col">Lastname</th>
         <th scope="col">Speciality</th>
         <th scope="col">Delete</th>
+        <th scope="col">Update</th>
+
       </tr>
     </thead>
     <tbody>
@@ -21,7 +23,9 @@
         <td>{{d.speciality}}</td>
         <td>
           <button class="btn btn-danger" (click)="delete(d.id)">Delete</button>
-
+        </td>
+        <td>
+          <button class="btn btn-success" (click)="update(d.id)">Update</button>
         </td>
       </tr>
     </tbody>

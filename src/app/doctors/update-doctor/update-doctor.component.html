@@ -1,0 +1,24 @@
+<div class="container">
+  <h2 align="center">Form upadte doctor</h2>
+</div>
+<div class="container">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Firstname</label>
+      <input type="text" class="form-control" id="first" [ngModelOptions]="{standalone: true}" [(ngModel)]="doctor!.firstname">
+    </div>
+    <div class="form-group">
+      <label>Lastname</label>
+      <input type="text" class="form-control" id="last" [ngModelOptions]="{standalone: true}" [(ngModel)]="doctor!.lastname">
+    </div>
+    <div class="form-group">
+      <label>Speciality</label>
+      <select class="form-control" id="spec" [ngModelOptions]="{standalone: true}" [(ngModel)]="doctor!.speciality">
+        <option value="Spec 1">Spec 1</option>
+        <option value="Spec 2">Spec 2</option>
+        <option value="Spec 3">Spec 3</option>
+      </select>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+</div>
