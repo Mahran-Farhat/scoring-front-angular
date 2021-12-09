@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Doctor } from 'src/app/models/doctor';
+import { DoctorService } from 'src/app/services/doctor.service';
 
 @Component({
   selector: 'app-list-doctor',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListDoctorComponent implements OnInit {
 
-  constructor() { }
+  doctors?:Observable<Doctor[]>;
+
+  constructor(private agent:DoctorService) { }
 
   ngOnInit(): void {
+    this.doctors = this.agent.listdoctors();
+  }
+
+  delete(id:any){
+
   }
 
 }

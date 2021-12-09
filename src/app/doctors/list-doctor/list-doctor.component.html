@@ -1,1 +1,30 @@
-<p>list-doctor works!</p>
+<div class="container">
+  <h2 align="center">List of doctors</h2>
+</div>
+<div class="container">
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Firstname</th>
+        <th scope="col">Lastname</th>
+        <th scope="col">Speciality</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let d of doctors |async" >
+        <th scope="row">{{d.id}}</th>
+        <td>{{d.firstname}}</td>
+        <td>{{d.lastname}}</td>
+        <td>{{d.speciality}}</td>
+        <td>
+          <button class="btn btn-danger" (click)="delete(d.id)">Delete</button>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

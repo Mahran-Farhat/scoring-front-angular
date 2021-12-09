@@ -15,5 +15,11 @@ export class DoctorService {
     return this.http.post(`${this.url}`,value);
   }
 
+  listdoctors():Observable<any>{
+    return this.http.get(`${this.url}`);
+  }
+
+
+
 
 }
