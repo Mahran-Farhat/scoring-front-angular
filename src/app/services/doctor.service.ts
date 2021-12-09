@@ -32,6 +32,10 @@ export class DoctorService {
 
   }
 
+  searchdoctor(spec:any,pseudo:any):Observable<any>{
+    return this.http.get(`${this.url}/search/${spec}&${pseudo}`);
+  }
+
 
 
 
