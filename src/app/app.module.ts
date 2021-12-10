@@ -13,6 +13,8 @@ import { CreateDoctorComponent } from './doctors/create-doctor/create-doctor.com
 import { ListDoctorComponent } from './doctors/list-doctor/list-doctor.component';
 import { UpdateDoctorComponent } from './doctors/update-doctor/update-doctor.component';
 import { AdvancedSearchComponent } from './doctors/advanced-search/advanced-search.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { AdvancedSearchComponent } from './doctors/advanced-search/advanced-sear
     CreateDoctorComponent,
     ListDoctorComponent,
     UpdateDoctorComponent,
-    AdvancedSearchComponent
+    AdvancedSearchComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

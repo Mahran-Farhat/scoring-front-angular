@@ -22,8 +22,15 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <div *ngIf="!isLoggedIn">
+        <button class="btn btn-outline-info my-2 my-sm-0" routerLink="register" type="submit">Regsiter</button>
+        <button class="btn btn-outline-info mx-3 my-2 my-sm-0" routerLink="login" type="submit">Login</button>
+      </div>
+      <div *ngIf="isLoggedIn">
+        <li class="nav-item">
+          <a href="nav-link" (click)="logout()">LogOut</a>
+      </li>
+      </div>
     </form>
   </div>
 </nav>
