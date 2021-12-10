@@ -15,6 +15,7 @@ import { UpdateDoctorComponent } from './doctors/update-doctor/update-doctor.com
 import { AdvancedSearchComponent } from './doctors/advanced-search/advanced-search.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { authInterceptorProvider } from './services/authinterceptor.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { RegisterComponent } from './register/register.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [authInterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
